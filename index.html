@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoveMoney 游戏攻略站</title>
+    <title>LMRN.tools - Love, Money, Rock'n'Roll: Калькулятор маршрутов + Прохождение без спойлеров</title>
+    <meta name="description" content="Интерактивный калькулятор маршрутов и полное прохождение Love, Money, Rock'n'Roll без спойлеров. Достижение всех концовок, трекер прогресса CG, русский и английский языки.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="alternate" hreflang="en" href="/en/">
+    <link rel="canonical" href="https://lmrn.tools/ru/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LMRN.tools",
+        "description": "Love, Money, Rock'n'Roll route calculator and spoiler-free walkthrough",
+        "url": "https://lmrn.tools",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-container">
                 <div class="logo">
-                    <h1>💰 LoveMoney 攻略站</h1>
+                    <h1>🎸 LMRN.tools</h1>
+                    <span class="subtitle">Love, Money, Rock'n'Roll</span>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="#home">首页</a></li>
-                    <li><a href="#basics">基础攻略</a></li>
-                    <li><a href="#advanced">进阶技巧</a></li>
-                    <li><a href="#characters">角色攻略</a></li>
-                    <li><a href="#items">道具系统</a></li>
-                    <li><a href="#tips">实用技巧</a></li>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#calculator">Калькулятор маршрутов</a></li>
+                    <li><a href="#walkthrough">Прохождение</a></li>
+                    <li><a href="#progress">Трекер прогресса</a></li>
+                    <li><a href="#endings">Концовки</a></li>
+                    <li><a href="#characters">Персонажи</a></li>
+                    <li class="lang-switch"><a href="/en/">EN</a></li>
                 </ul>
+                <button class="mobile-menu-btn">☰</button>
             </div>
         </nav>
     </header>
@@ -28,204 +52,453 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h2>欢迎来到 LoveMoney 游戏攻略站</h2>
-                <p>这里有最全面的游戏攻略、角色分析和实用技巧，助你在游戏中取得更好的成绩！</p>
-                <button class="cta-button" onclick="scrollToSection('basics')">开始学习</button>
-            </div>
-        </section>
-
-        <section id="basics" class="content-section">
-            <div class="container">
-                <h2>🎮 基础攻略</h2>
-                <div class="guide-grid">
-                    <div class="guide-card">
-                        <h3>新手入门</h3>
-                        <p>了解游戏基本操作和界面布局，快速上手 LoveMoney 游戏。</p>
-                        <ul>
-                            <li>游戏界面介绍</li>
-                            <li>基本操作指南</li>
-                            <li>初始设置建议</li>
-                            <li>新手任务攻略</li>
-                        </ul>
+                <h2>Love, Money, Rock'n'Roll:<br>Ваш гид по идеальному прохождению</h2>
+                <p>Интерактивный калькулятор маршрутов, прохождение без спойлеров и трекер всех концовок и CG. Достигайте нужных концовок с минимальными затратами времени!</p>
+                <div class="cta-buttons">
+                    <button class="cta-button primary" onclick="scrollToSection('calculator')">🧮 Калькулятор маршрутов</button>
+                    <button class="cta-button secondary" onclick="scrollToSection('walkthrough')">📖 Прохождение без спойлеров</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Концовок</span>
                     </div>
-                    <div class="guide-card">
-                        <h3>游戏机制</h3>
-                        <p>深入理解游戏核心机制，掌握获得金钱和爱情的基本方法。</p>
-                        <ul>
-                            <li>金钱获取系统</li>
-                            <li>爱情值机制</li>
-                            <li>时间管理系统</li>
-                            <li>随机事件机制</li>
-                        </ul>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Персонажа</span>
                     </div>
-                    <div class="guide-card">
-                        <h3>资源管理</h3>
-                        <p>学会合理分配和管理游戏中的各种资源。</p>
-                        <ul>
-                            <li>金钱分配策略</li>
-                            <li>时间规划技巧</li>
-                            <li>体力管理方法</li>
-                            <li>道具使用时机</li>
-                        </ul>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">CG</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="advanced" class="content-section">
+        <section id="calculator" class="content-section">
             <div class="container">
-                <h2>🚀 进阶技巧</h2>
-                <div class="guide-grid">
-                    <div class="guide-card">
-                        <h3>高效刷钱法</h3>
-                        <p>掌握各种快速获得金钱的高级技巧和策略。</p>
-                        <ul>
-                            <li>最优职业选择</li>
-                            <li>投资理财技巧</li>
-                            <li>副业经营攻略</li>
-                            <li>特殊事件利用</li>
-                        </ul>
+                <h2>🧮 Интерактивный калькулятор маршрутов</h2>
+                <p class="section-description">Введите ваши выборы, получите текущий статус симпатий и доступные концовки в режиме реального времени.</p>
+                
+                <div class="calculator-container">
+                    <div class="calculator-input">
+                        <h3>Ваши выборы</h3>
+                        <div class="choice-tracker">
+                            <div class="chapter-choice">
+                                <h4>Глава 1: Знакомство с группой</h4>
+                                <div class="choice-options">
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch1" value="money" data-money="10" data-love="0">
+                                        <span>Сосредоточиться на контракте (+10 Деньги)</span>
+                                    </label>
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch1" value="band" data-money="0" data-love="5">
+                                        <span>Поддержать группу (+5 ко всем персонажам)</span>
+                                    </label>
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch1" value="balance" data-money="5" data-love="2">
+                                        <span>Найти баланс (+5 Деньги, +2 ко всем)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="chapter-choice">
+                                <h4>Глава 2: Первые выступления</h4>
+                                <div class="choice-options">
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch2" value="ellie" data-ellie="15" data-money="0">
+                                        <span>Поддержать Элли (+15 Элли)</span>
+                                    </label>
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch2" value="hiro" data-hiro="15" data-money="0">
+                                        <span>Поддержать Хиро (+15 Хиро)</span>
+                                    </label>
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch2" value="money-focus" data-money="20">
+                                        <span>Сосредоточиться на доходе (+20 Деньги)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="chapter-choice">
+                                <h4>Глава 3: Проблемы в группе</h4>
+                                <div class="choice-options">
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch3" value="kat" data-kat="20" data-nikolai="-5">
+                                        <span>Встать на сторону Кэт (+20 Кэт, -5 Николай)</span>
+                                    </label>
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch3" value="nikolai" data-nikolai="20" data-kat="-5">
+                                        <span>Поддержать Николая (+20 Николай, -5 Кэт)</span>
+                                    </label>
+                                    <label class="choice-option">
+                                        <input type="radio" name="ch3" value="neutral" data-money="10">
+                                        <span>Остаться нейтральным (+10 Деньги)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="resetChoices" class="btn btn-secondary">🔄 Сбросить выборы</button>
                     </div>
-                    <div class="guide-card">
-                        <h3>爱情攻略</h3>
-                        <p>学会如何在游戏中建立和维持浪漫关系。</p>
-                        <ul>
-                            <li>角色好感度系统</li>
-                            <li>约会策略指南</li>
-                            <li>礼物选择技巧</li>
-                            <li>关系维护方法</li>
-                        </ul>
+
+                    <div class="calculator-results">
+                        <h3>Текущий статус</h3>
+                        <div class="stats-display">
+                            <div class="stat-bar">
+                                <div class="stat-info">
+                                    <span class="stat-name">💰 Деньги</span>
+                                    <span class="stat-value" id="money-value">0</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="money-bar"></div>
+                                </div>
+                            </div>
+
+                            <div class="stat-bar">
+                                <div class="stat-info">
+                                    <span class="stat-name">🎤 Элли</span>
+                                    <span class="stat-value" id="ellie-value">0</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="ellie-bar"></div>
+                                </div>
+                            </div>
+
+                            <div class="stat-bar">
+                                <div class="stat-info">
+                                    <span class="stat-name">🥁 Хиро</span>
+                                    <span class="stat-value" id="hiro-value">0</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="hiro-bar"></div>
+                                </div>
+                            </div>
+
+                            <div class="stat-bar">
+                                <div class="stat-info">
+                                    <span class="stat-name">🎸 Кэт</span>
+                                    <span class="stat-value" id="kat-value">0</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="kat-bar"></div>
+                                </div>
+                            </div>
+
+                            <div class="stat-bar">
+                                <div class="stat-info">
+                                    <span class="stat-name">🎹 Николай</span>
+                                    <span class="stat-value" id="nikolai-value">0</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="nikolai-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="available-endings">
+                            <h4>Доступные концовки:</h4>
+                            <div id="endings-list">
+                                <p class="no-endings">Сделайте выборы, чтобы увидеть доступные концовки</p>
+                            </div>
+                        </div>
+
+                        <div class="next-recommendations">
+                            <h4>Рекомендации:</h4>
+                            <div id="recommendations">
+                                <p>Начните делать выборы, чтобы получить персонализированные рекомендации</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="guide-card">
-                        <h3>完美结局</h3>
-                        <p>达成游戏中各种完美结局的详细攻略。</p>
-                        <ul>
-                            <li>结局分支分析</li>
-                            <li>关键选择点</li>
-                            <li>数值要求解析</li>
-                            <li>完美路线规划</li>
-                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="walkthrough" class="content-section">
+            <div class="container">
+                <h2>📖 Прохождение без спойлеров</h2>
+                <p class="section-description">Пошаговое руководство с ключевыми выборами. Спойлеры скрыты по умолчанию.</p>
+                
+                <div class="walkthrough-nav">
+                    <button class="chapter-btn active" data-chapter="1">Глава 1</button>
+                    <button class="chapter-btn" data-chapter="2">Глава 2</button>
+                    <button class="chapter-btn" data-chapter="3">Глава 3</button>
+                    <button class="chapter-btn" data-chapter="4">Глава 4</button>
+                    <button class="chapter-btn" data-chapter="5">Глава 5</button>
+                </div>
+
+                <div class="chapter-content">
+                    <div class="chapter" id="chapter-1">
+                        <h3>Глава 1: Знакомство с группой</h3>
+                        <div class="chapter-summary">
+                            <p><strong>Ключевые моменты:</strong> Первое знакомство с участниками группы, принятие решения о подписании контракта.</p>
+                            <p><strong>Важные выборы:</strong> 3 ключевых решения, влияющих на начальные отношения.</p>
+                        </div>
+
+                        <div class="choices-list">
+                            <div class="choice-point">
+                                <h4>🎯 Выбор 1.1: Реакция на предложение</h4>
+                                <div class="choice-options-display">
+                                    <div class="choice-result money">💰 Сосредоточиться на контракте → +10 Деньги</div>
+                                    <div class="choice-result love">💕 Поддержать группу → +5 ко всем персонажам</div>
+                                    <div class="choice-result balance">⚖️ Найти баланс → +5 Деньги, +2 ко всем</div>
+                                </div>
+                                <div class="spoiler-section">
+                                    <button class="spoiler-btn">🔍 Показать подробности (спойлеры)</button>
+                                    <div class="spoiler-content">
+                                        <p><strong>Контекст:</strong> Группа предлагает вам стать их менеджером...</p>
+                                        <p><strong>Последствия:</strong> Этот выбор определит ваш основной фокус в игре...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="progress" class="content-section">
+            <div class="container">
+                <h2>📊 Трекер прогресса</h2>
+                <p class="section-description">Отслеживайте свой прогресс в получении всех концовок, CG и достижений.</p>
+                
+                <div class="progress-tabs">
+                    <button class="tab-btn active" data-tab="endings">Концовки</button>
+                    <button class="tab-btn" data-tab="cg">CG Галерея</button>
+                    <button class="tab-btn" data-tab="achievements">Достижения</button>
+                </div>
+
+                <div class="progress-content">
+                    <div class="tab-content active" id="endings-tab">
+                        <div class="progress-header">
+                            <div class="completion-stats">
+                                <div class="completion-circle">
+                                    <span class="completion-percent" id="endings-percent">0%</span>
+                                    <span class="completion-label">Концовок</span>
+                                </div>
+                                <div class="completion-details">
+                                    <p><span id="endings-completed">0</span> из <span id="endings-total">12</span> концовок получено</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" id="shareProgress">📤 Поделиться прогрессом</button>
+                        </div>
+
+                        <div class="endings-grid">
+                            <div class="ending-card" data-ending="true-love">
+                                <div class="ending-icon">💕</div>
+                                <h4>Истинная любовь</h4>
+                                <p class="ending-description">Найти баланс между любовью и карьерой</p>
+                                <div class="ending-requirements">
+                                    <span class="req">Элли ≥80</span>
+                                    <span class="req">Деньги ≥50</span>
+                                </div>
+                                <div class="ending-status">
+                                    <input type="checkbox" class="ending-checkbox">
+                                    <span class="status-text">Не получено</span>
+                                </div>
+                            </div>
+
+                            <div class="ending-card" data-ending="rockstar">
+                                <div class="ending-icon">🎸</div>
+                                <h4>Рок-звезда</h4>
+                                <p class="ending-description">Покорить мир рок-н-ролла</p>
+                                <div class="ending-requirements">
+                                    <span class="req">Все персонажи ≥60</span>
+                                    <span class="req">Деньги ≥100</span>
+                                </div>
+                                <div class="ending-status">
+                                    <input type="checkbox" class="ending-checkbox">
+                                    <span class="status-text">Не получено</span>
+                                </div>
+                            </div>
+
+                            <div class="ending-card" data-ending="business">
+                                <div class="ending-icon">💼</div>
+                                <h4>Бизнес-империя</h4>
+                                <p class="ending-description">Построить музыкальную империю</p>
+                                <div class="ending-requirements">
+                                    <span class="req">Деньги ≥150</span>
+                                    <span class="req">Любая любовная линия <50</span>
+                                </div>
+                                <div class="ending-status">
+                                    <input type="checkbox" class="ending-checkbox">
+                                    <span class="status-text">Не получено</span>
+                                </div>
+                            </div>
+
+                            <div class="ending-card" data-ending="secret">
+                                <div class="ending-icon">🔮</div>
+                                <h4>Секретная концовка</h4>
+                                <p class="ending-description">Скрытый путь для настоящих ценителей</p>
+                                <div class="ending-requirements">
+                                    <span class="req">Особые условия</span>
+                                    <span class="req spoiler-req">Нажмите для подробностей</span>
+                                </div>
+                                <div class="ending-status">
+                                    <input type="checkbox" class="ending-checkbox">
+                                    <span class="status-text">Не получено</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="cg-tab">
+                        <div class="progress-header">
+                            <div class="completion-stats">
+                                <div class="completion-circle">
+                                    <span class="completion-percent" id="cg-percent">0%</span>
+                                    <span class="completion-label">CG</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cg-grid">
+                            <div class="cg-item" data-character="ellie">
+                                <div class="cg-preview">🎤</div>
+                                <p>Элли - Концерт</p>
+                                <input type="checkbox" class="cg-checkbox">
+                            </div>
+                            <div class="cg-item" data-character="hiro">
+                                <div class="cg-preview">🥁</div>
+                                <p>Хиро - Студия</p>
+                                <input type="checkbox" class="cg-checkbox">
+                            </div>
+                            <div class="cg-item" data-character="kat">
+                                <div class="cg-preview">🎸</div>
+                                <p>Кэт - Репетиция</p>
+                                <input type="checkbox" class="cg-checkbox">
+                            </div>
+                            <div class="cg-item" data-character="nikolai">
+                                <div class="cg-preview">🎹</div>
+                                <p>Николай - Композиция</p>
+                                <input type="checkbox" class="cg-checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="achievements-tab">
+                        <div class="achievements-list">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🏆</div>
+                                <div class="achievement-info">
+                                    <h4>Первые шаги</h4>
+                                    <p>Завершите первую главу</p>
+                                </div>
+                                <input type="checkbox" class="achievement-checkbox">
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">💎</div>
+                                <div class="achievement-info">
+                                    <h4>Коллекционер</h4>
+                                    <p>Соберите все CG</p>
+                                </div>
+                                <input type="checkbox" class="achievement-checkbox">
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">🎯</div>
+                                <div class="achievement-info">
+                                    <h4>Перфекционист</h4>
+                                    <p>Получите все концовки</p>
+                                </div>
+                                <input type="checkbox" class="achievement-checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="endings" class="content-section">
+            <div class="container">
+                <h2>🎭 Все концовки</h2>
+                <p class="section-description">Полный гид по всем концовкам с требованиями и советами по достижению.</p>
+                
+                <div class="endings-filter">
+                    <button class="filter-btn active" data-filter="all">Все концовки</button>
+                    <button class="filter-btn" data-filter="love">Романтические</button>
+                    <button class="filter-btn" data-filter="career">Карьерные</button>
+                    <button class="filter-btn" data-filter="secret">Секретные</button>
+                </div>
+
+                <div class="endings-detailed">
+                    <article class="ending-guide" data-category="love">
+                        <h3>💕 Истинная любовь (Элли)</h3>
+                        <div class="ending-meta">
+                            <span class="difficulty easy">Легко</span>
+                            <span class="playtime">~2 часа</span>
+                        </div>
+                        <div class="requirements-table">
+                            <h4>Требования:</h4>
+                            <table>
+                                <tr><td>Элли</td><td>≥ 80</td></tr>
+                                <tr><td>Деньги</td><td>≥ 50</td></tr>
+                                <tr><td>Другие персонажи</td><td>< 60</td></tr>
+                            </table>
+                        </div>
+                        <div class="ending-guide-content">
+                            <h4>Ключевые выборы:</h4>
+                            <ol>
+                                <li>Глава 1: Поддержать группу</li>
+                                <li>Глава 2: Поддержать Элли</li>
+                                <li>Глава 4: Выбрать романтическую сцену</li>
+                                <li>Глава 5: Отказаться от крупного контракта</li>
+                            </ol>
+                        </div>
+                        <div class="spoiler-section">
+                            <button class="spoiler-btn">🔍 Показать детали концовки (спойлеры)</button>
+                            <div class="spoiler-content">
+                                <p>В этой концовке вы и Элли понимаете, что музыка объединила ваши сердца...</p>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="characters" class="content-section">
             <div class="container">
-                <h2>👥 角色攻略</h2>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <div class="character-avatar">💼</div>
-                        <h3>商业精英</h3>
-                        <p>专注于商业投资和金钱积累的角色类型。</p>
-                        <div class="character-stats">
-                            <span class="stat">💰 金钱能力: ⭐⭐⭐⭐⭐</span>
-                            <span class="stat">💕 魅力值: ⭐⭐⭐</span>
-                            <span class="stat">⚡ 效率: ⭐⭐⭐⭐</span>
+                <h2>👥 Персонажи и маршруты</h2>
+                
+                <div class="characters-grid">
+                    <div class="character-detailed">
+                        <div class="character-header">
+                            <div class="character-avatar-large">🎤</div>
+                            <div class="character-info">
+                                <h3>Элли</h3>
+                                <p class="character-role">Вокалистка группы</p>
+                                <div class="character-traits">
+                                    <span class="trait">Амбициозная</span>
+                                    <span class="trait">Вспыльчивая</span>
+                                    <span class="trait">Талантливая</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="character-card">
-                        <div class="character-avatar">🎨</div>
-                        <h3>艺术家</h3>
-                        <p>拥有独特魅力，在爱情方面有特殊优势。</p>
-                        <div class="character-stats">
-                            <span class="stat">💰 金钱能力: ⭐⭐</span>
-                            <span class="stat">💕 魅力值: ⭐⭐⭐⭐⭐</span>
-                            <span class="stat">⚡ 效率: ⭐⭐⭐</span>
+                        
+                        <div class="affection-guide">
+                            <h4>Как повысить симпатию:</h4>
+                            <ul class="affection-tips">
+                                <li><span class="tip-value">+15</span> Поддержать её в споре с продюсером</li>
+                                <li><span class="tip-value">+10</span> Выбрать её песню для сингла</li>
+                                <li><span class="tip-value">+5</span> Комплименты о голосе</li>
+                                <li><span class="tip-value">-10</span> Критика её творчества</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="character-card">
-                        <div class="character-avatar">⚖️</div>
-                        <h3>平衡型</h3>
-                        <p>各方面能力均衡，适合新手玩家选择。</p>
-                        <div class="character-stats">
-                            <span class="stat">💰 金钱能力: ⭐⭐⭐</span>
-                            <span class="stat">💕 魅力值: ⭐⭐⭐</span>
-                            <span class="stat">⚡ 效率: ⭐⭐⭐</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="items" class="content-section">
-            <div class="container">
-                <h2>🎁 道具系统</h2>
-                <div class="items-grid">
-                    <div class="item-category">
-                        <h3>💍 礼品道具</h3>
-                        <div class="item-list">
-                            <div class="item">
-                                <span class="item-name">玫瑰花</span>
-                                <span class="item-effect">+5 爱情值</span>
+                        <div class="route-milestones">
+                            <h4>Ключевые моменты маршрута:</h4>
+                            <div class="milestone">
+                                <span class="milestone-req">20+ симпатии</span>
+                                <span class="milestone-desc">Открывается дополнительный диалог в студии</span>
                             </div>
-                            <div class="item">
-                                <span class="item-name">钻石戒指</span>
-                                <span class="item-effect">+20 爱情值</span>
+                            <div class="milestone">
+                                <span class="milestone-req">50+ симпатии</span>
+                                <span class="milestone-desc">Романтическая сцена после концерта</span>
                             </div>
-                            <div class="item">
-                                <span class="item-name">豪华晚餐</span>
-                                <span class="item-effect">+15 爱情值</span>
+                            <div class="milestone">
+                                <span class="milestone-req">80+ симпатии</span>
+                                <span class="milestone-desc">Доступна концовка "Истинная любовь"</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="item-category">
-                        <h3>💼 投资道具</h3>
-                        <div class="item-list">
-                            <div class="item">
-                                <span class="item-name">股票</span>
-                                <span class="item-effect">被动收入 +100/天</span>
-                            </div>
-                            <div class="item">
-                                <span class="item-name">房产</span>
-                                <span class="item-effect">被动收入 +500/天</span>
-                            </div>
-                            <div class="item">
-                                <span class="item-name">公司股份</span>
-                                <span class="item-effect">被动收入 +1000/天</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-category">
-                        <h3>⚡ 效率道具</h3>
-                        <div class="item-list">
-                            <div class="item">
-                                <span class="item-name">咖啡</span>
-                                <span class="item-effect">工作效率 +20%</span>
-                            </div>
-                            <div class="item">
-                                <span class="item-name">能量饮料</span>
-                                <span class="item-effect">工作效率 +50%</span>
-                            </div>
-                            <div class="item">
-                                <span class="item-name">专注药剂</span>
-                                <span class="item-effect">工作效率 +100%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="tips" class="content-section">
-            <div class="container">
-                <h2>💡 实用技巧</h2>
-                <div class="tips-container">
-                    <div class="tip-card">
-                        <h3>🎯 每日任务优化</h3>
-                        <p>合理安排每日任务顺序，最大化收益效率。优先完成高收益任务，合理利用体力值。</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>📈 数值管理</h3>
-                        <p>保持金钱、爱情值和体力的平衡发展。避免单一数值过高而其他数值不足的情况。</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>⏰ 时机把握</h3>
-                        <p>了解游戏中各种事件的触发时机，在最佳时间点使用道具和做出选择。</p>
-                    </div>
-                    <div class="tip-card">
-                        <h3>🔄 存档管理</h3>
-                        <p>在关键选择点前保存游戏，尝试不同选择路线，找到最优解决方案。</p>
                     </div>
                 </div>
             </div>
@@ -234,7 +507,44 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 LoveMoney 游戏攻略站 | 让你的游戏之路更加精彩</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LMRN.tools</h4>
+                    <p>Ваш гид по Love, Money, Rock'n'Roll</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK">VK</a>
+                        <a href="#" aria-label="Telegram">TG</a>
+                        <a href="#" aria-label="Discord">Discord</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Инструменты</h4>
+                    <ul>
+                        <li><a href="#calculator">Калькулятор маршрутов</a></li>
+                        <li><a href="#progress">Трекер прогресса</a></li>
+                        <li><a href="#walkthrough">Прохождение</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Гайды</h4>
+                    <ul>
+                        <li><a href="#endings">Все концовки</a></li>
+                        <li><a href="#characters">Персонажи</a></li>
+                        <li><a href="/ru/patches">Патчи и моды</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Язык</h4>
+                    <div class="lang-switcher">
+                        <a href="/ru/" class="lang-current">🇷🇺 Русский</a>
+                        <a href="/en/">🇺🇸 English</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LMRN.tools | Неофициальный гид по Love, Money, Rock'n'Roll</p>
+                <p class="disclaimer">Этот сайт не связан с разработчиками игры. Все права на игру принадлежат их владельцам.</p>
+            </div>
         </div>
     </footer>
 
