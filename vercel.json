@@ -3,5 +3,37 @@
   "outputDirectory": ".",
   "framework": null,
   "installCommand": null,
-  "devCommand": null
+  "devCommand": null,
+  "redirects": [
+    {
+      "source": "/en",
+      "destination": "/en.html",
+      "permanent": false
+    },
+    {
+      "source": "/ru",
+      "destination": "/index.html",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Content-Language",
+          "value": "ru"
+        }
+      ]
+    },
+    {
+      "source": "/en.html",
+      "headers": [
+        {
+          "key": "Content-Language",
+          "value": "en"
+        }
+      ]
+    }
+  ]
 }
