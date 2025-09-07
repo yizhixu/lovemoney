@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveMoney 游戏攻略站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>💰 LoveMoney 攻略站</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#basics">基础攻略</a></li>
+                    <li><a href="#advanced">进阶技巧</a></li>
+                    <li><a href="#characters">角色攻略</a></li>
+                    <li><a href="#items">道具系统</a></li>
+                    <li><a href="#tips">实用技巧</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>欢迎来到 LoveMoney 游戏攻略站</h2>
+                <p>这里有最全面的游戏攻略、角色分析和实用技巧，助你在游戏中取得更好的成绩！</p>
+                <button class="cta-button" onclick="scrollToSection('basics')">开始学习</button>
+            </div>
+        </section>
+
+        <section id="basics" class="content-section">
+            <div class="container">
+                <h2>🎮 基础攻略</h2>
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <h3>新手入门</h3>
+                        <p>了解游戏基本操作和界面布局，快速上手 LoveMoney 游戏。</p>
+                        <ul>
+                            <li>游戏界面介绍</li>
+                            <li>基本操作指南</li>
+                            <li>初始设置建议</li>
+                            <li>新手任务攻略</li>
+                        </ul>
+                    </div>
+                    <div class="guide-card">
+                        <h3>游戏机制</h3>
+                        <p>深入理解游戏核心机制，掌握获得金钱和爱情的基本方法。</p>
+                        <ul>
+                            <li>金钱获取系统</li>
+                            <li>爱情值机制</li>
+                            <li>时间管理系统</li>
+                            <li>随机事件机制</li>
+                        </ul>
+                    </div>
+                    <div class="guide-card">
+                        <h3>资源管理</h3>
+                        <p>学会合理分配和管理游戏中的各种资源。</p>
+                        <ul>
+                            <li>金钱分配策略</li>
+                            <li>时间规划技巧</li>
+                            <li>体力管理方法</li>
+                            <li>道具使用时机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advanced" class="content-section">
+            <div class="container">
+                <h2>🚀 进阶技巧</h2>
+                <div class="guide-grid">
+                    <div class="guide-card">
+                        <h3>高效刷钱法</h3>
+                        <p>掌握各种快速获得金钱的高级技巧和策略。</p>
+                        <ul>
+                            <li>最优职业选择</li>
+                            <li>投资理财技巧</li>
+                            <li>副业经营攻略</li>
+                            <li>特殊事件利用</li>
+                        </ul>
+                    </div>
+                    <div class="guide-card">
+                        <h3>爱情攻略</h3>
+                        <p>学会如何在游戏中建立和维持浪漫关系。</p>
+                        <ul>
+                            <li>角色好感度系统</li>
+                            <li>约会策略指南</li>
+                            <li>礼物选择技巧</li>
+                            <li>关系维护方法</li>
+                        </ul>
+                    </div>
+                    <div class="guide-card">
+                        <h3>完美结局</h3>
+                        <p>达成游戏中各种完美结局的详细攻略。</p>
+                        <ul>
+                            <li>结局分支分析</li>
+                            <li>关键选择点</li>
+                            <li>数值要求解析</li>
+                            <li>完美路线规划</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="characters" class="content-section">
+            <div class="container">
+                <h2>👥 角色攻略</h2>
+                <div class="character-grid">
+                    <div class="character-card">
+                        <div class="character-avatar">💼</div>
+                        <h3>商业精英</h3>
+                        <p>专注于商业投资和金钱积累的角色类型。</p>
+                        <div class="character-stats">
+                            <span class="stat">💰 金钱能力: ⭐⭐⭐⭐⭐</span>
+                            <span class="stat">💕 魅力值: ⭐⭐⭐</span>
+                            <span class="stat">⚡ 效率: ⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-avatar">🎨</div>
+                        <h3>艺术家</h3>
+                        <p>拥有独特魅力，在爱情方面有特殊优势。</p>
+                        <div class="character-stats">
+                            <span class="stat">💰 金钱能力: ⭐⭐</span>
+                            <span class="stat">💕 魅力值: ⭐⭐⭐⭐⭐</span>
+                            <span class="stat">⚡ 效率: ⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-avatar">⚖️</div>
+                        <h3>平衡型</h3>
+                        <p>各方面能力均衡，适合新手玩家选择。</p>
+                        <div class="character-stats">
+                            <span class="stat">💰 金钱能力: ⭐⭐⭐</span>
+                            <span class="stat">💕 魅力值: ⭐⭐⭐</span>
+                            <span class="stat">⚡ 效率: ⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="items" class="content-section">
+            <div class="container">
+                <h2>🎁 道具系统</h2>
+                <div class="items-grid">
+                    <div class="item-category">
+                        <h3>💍 礼品道具</h3>
+                        <div class="item-list">
+                            <div class="item">
+                                <span class="item-name">玫瑰花</span>
+                                <span class="item-effect">+5 爱情值</span>
+                            </div>
+                            <div class="item">
+                                <span class="item-name">钻石戒指</span>
+                                <span class="item-effect">+20 爱情值</span>
+                            </div>
+                            <div class="item">
+                                <span class="item-name">豪华晚餐</span>
+                                <span class="item-effect">+15 爱情值</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-category">
+                        <h3>💼 投资道具</h3>
+                        <div class="item-list">
+                            <div class="item">
+                                <span class="item-name">股票</span>
+                                <span class="item-effect">被动收入 +100/天</span>
+                            </div>
+                            <div class="item">
+                                <span class="item-name">房产</span>
+                                <span class="item-effect">被动收入 +500/天</span>
+                            </div>
+                            <div class="item">
+                                <span class="item-name">公司股份</span>
+                                <span class="item-effect">被动收入 +1000/天</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-category">
+                        <h3>⚡ 效率道具</h3>
+                        <div class="item-list">
+                            <div class="item">
+                                <span class="item-name">咖啡</span>
+                                <span class="item-effect">工作效率 +20%</span>
+                            </div>
+                            <div class="item">
+                                <span class="item-name">能量饮料</span>
+                                <span class="item-effect">工作效率 +50%</span>
+                            </div>
+                            <div class="item">
+                                <span class="item-name">专注药剂</span>
+                                <span class="item-effect">工作效率 +100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="content-section">
+            <div class="container">
+                <h2>💡 实用技巧</h2>
+                <div class="tips-container">
+                    <div class="tip-card">
+                        <h3>🎯 每日任务优化</h3>
+                        <p>合理安排每日任务顺序，最大化收益效率。优先完成高收益任务，合理利用体力值。</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📈 数值管理</h3>
+                        <p>保持金钱、爱情值和体力的平衡发展。避免单一数值过高而其他数值不足的情况。</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>⏰ 时机把握</h3>
+                        <p>了解游戏中各种事件的触发时机，在最佳时间点使用道具和做出选择。</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔄 存档管理</h3>
+                        <p>在关键选择点前保存游戏，尝试不同选择路线，找到最优解决方案。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LoveMoney 游戏攻略站 | 让你的游戏之路更加精彩</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
