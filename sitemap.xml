@@ -4,112 +4,112 @@
   
   <!-- Russian Homepage (Default) -->
   <url>
-    <loc>https://lmrn.tools/</loc>
+    <loc>https://lovemoney.gg/</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link 
       rel="alternate" 
       hreflang="en" 
-      href="https://lmrn.tools/en.html" />
+      href="https://lovemoney.gg/en.html" />
     <xhtml:link 
       rel="alternate" 
       hreflang="ru" 
-      href="https://lmrn.tools/" />
+      href="https://lovemoney.gg/" />
   </url>
 
   <!-- English Homepage -->
   <url>
-    <loc>https://lmrn.tools/en.html</loc>
+    <loc>https://lovemoney.gg/en.html</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link 
       rel="alternate" 
       hreflang="en" 
-      href="https://lmrn.tools/en.html" />
+      href="https://lovemoney.gg/en.html" />
     <xhtml:link 
       rel="alternate" 
       hreflang="ru" 
-      href="https://lmrn.tools/" />
+      href="https://lovemoney.gg/" />
   </url>
 
   <!-- Alternative URL patterns for redirects -->
   <url>
-    <loc>https://lmrn.tools/en</loc>
+    <loc>https://lovemoney.gg/en</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link 
       rel="alternate" 
       hreflang="en" 
-      href="https://lmrn.tools/en.html" />
+      href="https://lovemoney.gg/en.html" />
     <xhtml:link 
       rel="alternate" 
       hreflang="ru" 
-      href="https://lmrn.tools/" />
+      href="https://lovemoney.gg/" />
   </url>
 
   <url>
-    <loc>https://lmrn.tools/ru</loc>
+    <loc>https://lovemoney.gg/ru</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link 
       rel="alternate" 
       hreflang="en" 
-      href="https://lmrn.tools/en.html" />
+      href="https://lovemoney.gg/en.html" />
     <xhtml:link 
       rel="alternate" 
       hreflang="ru" 
-      href="https://lmrn.tools/" />
+      href="https://lovemoney.gg/" />
   </url>
 
   <!-- Future potential pages (can be added when created) -->
   <!--
   <url>
-    <loc>https://lmrn.tools/walkthrough/chapter-1</loc>
+    <loc>https://lovemoney.gg/walkthrough/chapter-1</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link 
       rel="alternate" 
       hreflang="en" 
-      href="https://lmrn.tools/en/walkthrough/chapter-1" />
+      href="https://lovemoney.gg/en/walkthrough/chapter-1" />
     <xhtml:link 
       rel="alternate" 
       hreflang="ru" 
-      href="https://lmrn.tools/walkthrough/chapter-1" />
+      href="https://lovemoney.gg/walkthrough/chapter-1" />
   </url>
 
   <url>
-    <loc>https://lmrn.tools/endings/true-love</loc>
+    <loc>https://lovemoney.gg/endings/true-love</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link 
       rel="alternate" 
       hreflang="en" 
-      href="https://lmrn.tools/en/endings/true-love" />
+      href="https://lovemoney.gg/en/endings/true-love" />
     <xhtml:link 
       rel="alternate" 
       hreflang="ru" 
-      href="https://lmrn.tools/endings/true-love" />
+      href="https://lovemoney.gg/endings/true-love" />
   </url>
 
   <url>
-    <loc>https://lmrn.tools/characters/ellie</loc>
+    <loc>https://lovemoney.gg/characters/ellie</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link 
       rel="alternate" 
       hreflang="en" 
-      href="https://lmrn.tools/en/characters/ellie" />
+      href="https://lovemoney.gg/en/characters/ellie" />
     <xhtml:link 
       rel="alternate" 
       hreflang="ru" 
-      href="https://lmrn.tools/characters/ellie" />
+      href="https://lovemoney.gg/characters/ellie" />
   </url>
   -->
 
