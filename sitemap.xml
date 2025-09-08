@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Russian Homepage (Default) -->
+  <url>
+    <loc>https://lmrn.tools/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="en" 
+      href="https://lmrn.tools/en.html" />
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="ru" 
+      href="https://lmrn.tools/" />
+  </url>
+
+  <!-- English Homepage -->
+  <url>
+    <loc>https://lmrn.tools/en.html</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="en" 
+      href="https://lmrn.tools/en.html" />
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="ru" 
+      href="https://lmrn.tools/" />
+  </url>
+
+  <!-- Alternative URL patterns for redirects -->
+  <url>
+    <loc>https://lmrn.tools/en</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="en" 
+      href="https://lmrn.tools/en.html" />
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="ru" 
+      href="https://lmrn.tools/" />
+  </url>
+
+  <url>
+    <loc>https://lmrn.tools/ru</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="en" 
+      href="https://lmrn.tools/en.html" />
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="ru" 
+      href="https://lmrn.tools/" />
+  </url>
+
+  <!-- Future potential pages (can be added when created) -->
+  <!--
+  <url>
+    <loc>https://lmrn.tools/walkthrough/chapter-1</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="en" 
+      href="https://lmrn.tools/en/walkthrough/chapter-1" />
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="ru" 
+      href="https://lmrn.tools/walkthrough/chapter-1" />
+  </url>
+
+  <url>
+    <loc>https://lmrn.tools/endings/true-love</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="en" 
+      href="https://lmrn.tools/en/endings/true-love" />
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="ru" 
+      href="https://lmrn.tools/endings/true-love" />
+  </url>
+
+  <url>
+    <loc>https://lmrn.tools/characters/ellie</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="en" 
+      href="https://lmrn.tools/en/characters/ellie" />
+    <xhtml:link 
+      rel="alternate" 
+      hreflang="ru" 
+      href="https://lmrn.tools/characters/ellie" />
+  </url>
+  -->
+
+</urlset>

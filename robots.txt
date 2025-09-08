@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lmrn.tools/sitemap.xml
+
+# Allow all main pages
+Allow: /index.html
+Allow: /en.html
+Allow: /en
+Allow: /ru
+
+# Allow static assets
+Allow: /styles.css
+Allow: /script.js
+Allow: /script-en.js
+
+# Disallow common admin/system files (if any exist in the future)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.env*
+Disallow: /package*.json
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
